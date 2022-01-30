@@ -239,8 +239,11 @@
           Y +
           Z;
 
+        var objetivo = document.getElementById("op1");
+        objetivo.innerHTML = "Contr@" + valor + RESULT;
+        var objetivo = document.getElementById("op2");
+        objetivo.innerHTML = "Contra" + valor + RESULT;
         console.log("Contr@" + valor + RESULT);
-
         console.log("Contra" + valor + RESULT);
       }
     </script>
@@ -251,5 +254,7 @@
       <input type="text" id="enc" name="enc" /><br /><br />
       <input type="button" value="GENERAR" onclick="encriptar();" />
     </form>
+    <h4><b id="op1">OP1</b></h4>
+    <h4><b id="op2">OP2</b></h4>
   </body>
 </html>
