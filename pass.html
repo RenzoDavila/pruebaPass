@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <link rel="icon" href="key.ico" />
+  <body>
+    <script>
+      function encriptar() {
+        valor = document.getElementById("enc").value;
+        array = valor.match(/.{1,1}/g);
+        i = 0;
+        letra = 0;
+        Acant = 0;
+        Bcant = 0;
+        Ccant = 0;
+        Dcant = 0;
+        Ecant = 0;
+        Fcant = 0;
+        Gcant = 0;
+        Hcant = 0;
+        Icant = 0;
+        Jcant = 0;
+        Kcant = 0;
+        Lcant = 0;
+        Mcant = 0;
+        Ncant = 0;
+        Ñcant = 0;
+        Ocant = 0;
+        Pcant = 0;
+        Qcant = 0;
+        Rcant = 0;
+        Scant = 0;
+        Tcant = 0;
+        Ucant = 0;
+        Vcant = 0;
+        Wcant = 0;
+        Xcant = 0;
+        Ycant = 0;
+        Zcant = 0;
+
+        while (i < array.length) {
+          if (array[i] != " ") {
+            letra = letra + 1;
+          }
+          switch (array[i]) {
+            case "a":
+            case "A":
+              Acant++;
+              break;
+            case "b":
+            case "B":
+              Bcant++;
+              break;
+            case "c":
+            case "C":
+              Ccant++;
+              break;
+            case "d":
+            case "D":
+              Dcant++;
+              break;
+            case "e":
+            case "E":
+              Ecant++;
+              break;
+            case "f":
+            case "F":
+              Fcant++;
+              break;
+            case "g":
+            case "G":
+              Gcant++;
+              break;
+            case "h":
+            case "H":
+              Hcant++;
+              break;
+            case "i":
+            case "I":
+              Icant++;
+              break;
+            case "j":
+            case "J":
+              Jcant++;
+              break;
+            case "k":
+            case "K":
+              Kcant++;
+              break;
+            case "l":
+            case "L":
+              Lcant++;
+              break;
+            case "m":
+            case "M":
+              Mcant++;
+              break;
+            case "n":
+            case "N":
+              Ncant++;
+              break;
+            case "ñ":
+            case "Ñ":
+              Ñcant++;
+              break;
+            case "o":
+            case "O":
+              Ocant++;
+              break;
+            case "p":
+            case "P":
+              Pcant++;
+              break;
+            case "q":
+            case "Q":
+              Qcant++;
+              break;
+            case "r":
+            case "R":
+              Rcant++;
+              break;
+            case "s":
+            case "S":
+              Scant++;
+              break;
+            case "t":
+            case "T":
+              Tcant++;
+              break;
+            case "u":
+            case "U":
+              Ucant++;
+              break;
+            case "v":
+            case "V":
+              Vcant++;
+              break;
+            case "w":
+            case "W":
+              Wcant++;
+              break;
+            case "x":
+            case "X":
+              Xcant++;
+              break;
+            case "y":
+            case "Y":
+              Ycant++;
+              break;
+            case "z":
+            case "Z":
+              Zcant++;
+              break;
+          }
+          i++;
+        }
+
+        A = 1;
+        B = 2;
+        C = 3;
+        D = 4;
+        E = 5;
+        F = 6;
+        G = 7;
+        H = 8;
+        I = 9;
+        J = 10;
+        K = 11;
+        L = 12;
+        M = 13;
+        N = 14;
+        Ñ = 15;
+        O = 16;
+        P = 17;
+        Q = 18;
+        R = 19;
+        S = 20;
+        T = 21;
+        U = 22;
+        V = 23;
+        W = 24;
+        X = 25;
+        Y = 26;
+        Z = 27;
+
+        A = A * Acant;
+        B = B * Bcant;
+        C = C * Ccant;
+        D = D * Dcant;
+        E = E * Ecant;
+        F = F * Fcant;
+        G = G * Gcant;
+        H = H * Hcant;
+        I = I * Icant;
+        J = J * Jcant;
+        K = K * Kcant;
+        L = L * Lcant;
+        M = M * Mcant;
+        N = N * Ncant;
+        Ñ = Ñ * Ñcant;
+        O = O * Ocant;
+        P = P * Pcant;
+        Q = Q * Qcant;
+        R = R * Rcant;
+        S = S * Scant;
+        T = T * Tcant;
+        U = U * Ucant;
+        V = V * Vcant;
+        W = W * Wcant;
+        X = X * Xcant;
+        Y = Y * Ycant;
+        Z = Z * Zcant;
+
+        RESULT =
+          A +
+          B +
+          C +
+          D +
+          E +
+          F +
+          G +
+          H +
+          I +
+          J +
+          K +
+          L +
+          M +
+          N +
+          Ñ +
+          O +
+          P +
+          Q +
+          R +
+          S +
+          T +
+          U +
+          V +
+          W +
+          X +
+          Y +
+          Z;
+
+        alert(
+          "TU CONTRASEÑA SERA: Contr@" +
+            valor +
+            RESULT +
+            " o Contra" +
+            valor +
+            RESULT
+        );
+      }
+    </script>
+
+    <h2>GENERARDOR CONTRASEÑAS</h2>
+
+    <form action="/action_page.php">
+      <label for="enc">Nombre de la pagina:</label><br />
+      <input type="text" id="enc" name="enc" /><br /><br />
+      <input type="button" value="GENERAR CONTRASEÑA" onclick="encriptar();" />
+    </form>
+  </body>
+</html>
